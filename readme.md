@@ -1,16 +1,16 @@
 # 📚 Book Explorer — Explorador de Livros
 
 ## 👤 Autoria
-* **Nome:** Giovanna Martins
-* **Matrícula:** 22610329
-* **GitHub:** [@giihmartins](https://github.com/giihmartins)
+- **Nome:** Giovanna Martins
+- **Matrícula:** 22610329
+- **GitHub:** [@giihmartins](https://github.com/giihmartins)
 
 ---
 
 ## 🚀 Links do Projeto
-* **Site Publicado (GitHub Pages):** [https://giihmartins.github.io/bootcamp2-app/](https://giihmartins.github.io/bootcamp2-app/)
-* **Repositório do Código:** [https://github.com/giihmartins/bootcamp2-app](https://github.com/giihmartins/bootcamp2-app)
-* **Repositório Docker Hub:** [https://hub.docker.com/r/giovanna12213/book-explorer](https://hub.docker.com/r/giovanna12213/book-explorer)
+- **Site Publicado (GitHub Pages):** [https://giihmartins.github.io/bootcamp2-app/](https://giihmartins.github.io/bootcamp2-app/)
+- **Repositório do Código:** [https://github.com/giihmartins/bootcamp2-app](https://github.com/giihmartins/bootcamp2-app)
+- **Repositório Docker Hub:** [https://hub.docker.com/r/giovanna12213/book-explorer](https://hub.docker.com/r/giovanna12213/book-explorer)
 
 ---
 
@@ -19,22 +19,32 @@ O **Book Explorer** permite que os utilizadores pesquisem por títulos de livros
 
 ---
 
+## 📸 Demonstração da Aplicação
+
+### Instância a rodar na Porta 8085
+![Aplicação na Porta 8085](Captura%20de%20tela%202026-11-01%20024408.png)
+
+### Instância a rodar na Porta 8086
+![Aplicação na Porta 8086](Captura%20de%20tela%202026-11-01%20025321.png)
+
+---
+
 ## 🗄️ Persistência de Dados (Supabase)
 A aplicação utiliza o **Supabase (PostgreSQL)** para persistência remota dos dados.
 
-* **Banco Escolhido:** Supabase (PostgreSQL)
-* **Tabela:** `favoritos`
-* **Campos Armazenados:**
+- **Banco Escolhido:** Supabase (PostgreSQL)
+- **Tabela:** `favoritos`
+- **Campos Armazenados:**
   * `id` (int8 / chave primária)
   * `created_at` (timestamp)
   * `titulo` (text)
   * `autor` (text)
   * `capa` (text - URL da imagem)
-* **Operações CRUD:**
+- **Operações CRUD:**
   * **Create:** Botão "⭐ Favoritar" insere um novo registo no Supabase.
   * **Read:** Secção "⭐ Meus Livros Favoritos" consulta e renderiza a lista ao carregar a página.
   * **Delete:** Botão "🗑️ Remover" elimina o registo do banco pelo `id`.
-* **Limitação Conhecida de Segurança:** As políticas de acesso (RLS) estão configuradas para permitir leitura e escrita públicas via chave `anon`.
+- **Limitação Conhecida de Segurança:** As políticas de acesso (RLS) estão configuradas para permitir leitura e escrita públicas via chave `anon`.
 
 ---
 
