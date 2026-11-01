@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador de Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1>📚 Explorador de Livros</h1>
+      <p>Pesquise por títulos, autores ou assuntos e descubra sua próxima leitura.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <form id="search-form" class="search-form">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Digite o título do livro ou nome do autor..." 
+          required
+        >
+        <button type="submit" id="btn-search">Buscar</button>
+      </form>
+    </section>
+
+    <section id="status-message" class="status-message"></section>
+
+    <section id="results-grid" class="results-grid"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Projeto desenvolvido para a Etapa 01 do Bootcamp • Dados via Google Books API</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
