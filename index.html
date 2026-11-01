@@ -31,14 +31,22 @@
     <section id="status-message" class="status-message"></section>
 
     <section id="results-grid" class="results-grid"></section>
+
+    <!-- Secção de Livros Favoritos (Supabase CRUD) -->
+    <section class="favorites-section" style="margin-top: 40px;">
+      <h2 style="margin-bottom: 20px; color: #2c3e50;">⭐ Meus Livros Favoritos</h2>
+      <div id="lista-favoritos" class="results-grid"></div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>Projeto desenvolvido para a Etapa 01 do Bootcamp • Dados via Google Books API</p>
+      <p>Projeto desenvolvido para a Etapa 02 do Bootcamp • Dados via Open Library API & Supabase</p>
     </div>
   </footer>
 
+  <!-- CDN do Supabase (obrigatório antes do script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
 </html>
