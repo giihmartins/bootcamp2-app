@@ -44,3 +44,8 @@ bootcamp2-app/
 ├── style.css      # Estilização e layout responsivo
 ├── script.js     # Lógica de busca e integração com a API
 └── README.md      # Documentação do projeto
+
+## 🐳 Como rodar com Docker
+
+```bash
+docker run -d -p 8085:80 giovanna12213/book-explorer:v1
